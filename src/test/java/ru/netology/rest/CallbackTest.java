@@ -16,7 +16,7 @@ class CallbackTest {
         form.$("[data-test-id=phone] input").setValue("+79213333333");
         form.$("[data-test-id=agreement]").click();
         form.$("[role=button]").click();
-        $(".order-success").shouldHave(exactText(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText(" Ваша заявка успешно отправлена! Наш менеджер свяжется  с вами в ближайшее время."));
     }
 }
 
